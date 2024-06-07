@@ -6,14 +6,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-<<<<<<< Updated upstream
     "axios": "^1.7.2",
-=======
     "@walletconnect/web3-provider": "^1.8.0",
     "@web3modal/ethers": "^4.2.3",
     "customize-cra": "^1.0.0",
     "ethers": "^6.13.0",
->>>>>>> Stashed changes
     "react": "^18.3.1",
     "react-app-rewired": "^2.2.1",
     "react-dom": "^18.3.1",
