@@ -1,0 +1,5 @@
+# .gitignore
+
+# Ignore data folder
+data/
+.DS_Store/
