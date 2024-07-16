@@ -1,7 +1,7 @@
 FROM node:lts
 
-WORKDIR /usr/src/predictsuperleague
+WORKDIR /usr/src/frontend
 
 ADD run.sh /usr/src/run.sh
 
-RUN npm install -g serve
+#RUN npm install -g serve

@@ -4,12 +4,6 @@ WORKDIR /usr/src/app
 
 RUN sed -i 
 
-
-
-
-
-
-
 ADD env_base_requirements.pip /tmp/
 RUN pip install --no-cache-dir -r /tmp/env_base_requirements.pip
 

@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'players'
 ]
 
 MIDDLEWARE = [
@@ -84,7 +85,7 @@ DATABASES = {
         'NAME': 'predictsuperleague',
         'USER': 'root',
         'PASSWORD': 'Predict123!',
-        'HOST': 'db',  # Change this from 'localhost' to 'db'
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
@@ -132,5 +133,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "http://localhost:3000/",
 ]

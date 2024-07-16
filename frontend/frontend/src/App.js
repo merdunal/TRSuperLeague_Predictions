@@ -1,9 +1,12 @@
+import React from "react";
 import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header />  // If you have a Header component, otherwise remove this line
+      <HomePage />
     </div>
   );
 }

@@ -3,13 +3,13 @@ version: '3'
 services:
   app:
     restart: always
-    build: app 
+    build: app
     container_name: slp_app
     links:
-      - db:db 
+      - db:db
     volumes:
       - ${PROJECT_PATH}/backend/backend:/usr/src/app
-      - ${PROJECT_PATH}/backend/inbox/:/usr/src/inbox
+      - ${PROJECT_PATH}/inbox:/usr/src/inbox
       - ./app:/usr/src/run
     environment:
       - DEBUG='true'
@@ -40,7 +40,7 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      - ${PROJECT_PATH}/frontend:/usr/src/frontend
+      - ${PROJECT_PATH}/frontend/frontend:/usr/src/frontend
     command: bash /usr/src/run.sh
 
   web:

@@ -5,7 +5,7 @@ const HomePage = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/home/')
+    axios.get('http://localhost:3000/api/home')
       .then(response => {
         setData(response.data);
       })
@@ -15,8 +15,8 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
-      {data ? <p>{data.message}</p> : <p>Loading...</p>}
+    <div style={{margin: '20px'}}>
+      {data ? <p>{data.message}</p> : <p>1...</p>}
     </div>
   );
 };

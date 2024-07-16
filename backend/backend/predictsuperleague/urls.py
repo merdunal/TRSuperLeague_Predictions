@@ -16,11 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from predictsuperleague.views import example_view  # Import the view function
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
-    path('api/', include('rest_framework.urls')),
-    path('home/', example_view, name='home')
+    path('', include('players.urls')),
+
 ]
